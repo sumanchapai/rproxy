@@ -36,6 +36,6 @@ func main() {
 		appProxy.ServeHTTP(w, r)
 	})
 
-	fmt.Println("Server listening on :7002")
-	log.Fatal(http.ListenAndServe(":7002", nil))
+	fmt.Println("Server listening on 127.0.0.1:7002")
+	log.Fatal(http.ListenAndServe("127.0.0.1:7002", nil))
 }
